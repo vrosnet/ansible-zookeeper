@@ -14,4 +14,4 @@ data_dir: /var/lib/zookeeper
 log_dir: /var/log/zookeeper
 zookeeper_dir: /opt/zookeeper-{{zookeeper_version}}
 zookeeper_hosts:
-  - inventory_hostname
+  - "{{ inventory_hostname }}"
