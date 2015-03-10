@@ -16,6 +16,7 @@ galaxy_info:
   #  - all
   #  - 5
      - 6
+     - 7
   #- name: GenericUNIX
   #  versions:
   #  - all
@@ -84,6 +85,14 @@ galaxy_info:
       - lenny
       - squeeze
       - wheezy
+  - name: RedHat
+    versions:
+      - 6
+      - 7
+  - name: CentOS
+    versions:
+      - 6
+      - 7
 
   # Below are all categories currently available. Just as with
   # the platforms above, uncomment those that apply to your role.

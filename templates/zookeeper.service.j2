@@ -1,0 +1,14 @@
+[Unit]
+Description=zookeeper
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=zookeeper
+ExecStart={{zookeeper_dir}}/bin/zkServer.sh start-foreground
+
+TimeoutSec=10
+
+[Install]
+WantedBy=multi-user.target

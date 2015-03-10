@@ -30,8 +30,8 @@
   file: path={{log_dir}} state=directory recurse=yes owner=zookeeper group=zookeeper
   tags: bootstrap
 
-- name: Upstart script.
-  template: src=zookeeper.conf.j2 dest=/etc/init/zookeeper.conf
+- name: zookeeper systemd unit
+  template: src=zookeeper.service.j2 dest=/usr/lib/systemd/system/zookeeper.service
   tags: deploy
 
 - name: Write myid file.
