@@ -43,5 +43,5 @@
   tags: deploy
 
 - name: Start zookeeper
-  service: name=zookeeper state=restarted 
+  service: name=zookeeper state=started 
   tags: deploy
