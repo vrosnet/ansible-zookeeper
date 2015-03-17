@@ -43,5 +43,8 @@
   tags: deploy
 
 - name: Start zookeeper
-  service: name=zookeeper state=started 
+  service: name=zookeeper state=started
   tags: deploy
+
+- name: copy zk jar into /usr/share/java for convenience
+  file: path=/usr/share/java/zookeeper-{{zookeeper_version}}.jar src=/opt/zookeeper-{{zookeeper_version}}/zookeeper-{{zookeeper_version}}.jar state=link
